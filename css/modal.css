@@ -1,0 +1,50 @@
+.modal-header{
+  background-color: #A093B1;
+  border-bottom: none;
+}
+
+.modal-body{
+  /*background-color: #66CCCC; */
+}
+
+.modal-footer{
+  background-color: #A093B1;
+  border-top: none;
+}
+
+hr {
+    border-top: 1px solid #333;
+}
+.thumbnail{
+  background-color: #66CCCC;
+  border-radius: 0px;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #5E1343;
+}
+.thumbnail a>img, .thumbnail>img {
+  max-width: 200px;
+  min-width: 200px;
+}
+.thumbnail .caption {
+    padding: 0px;
+    color: #333;
+    text-align: center;
+}
+.bio{
+	text-align: left;
+}
+
+#btnOK {
+    background-color: #ccc;
+    border-color: #5E1343;
+    border: 1px solid #5E1343;
+    border-radius: 0px;
+}
+
+.close{
+  font-size: 26px;
+  color: #5E1343;
+  text-shadow: none;
+  opacity: .8;
+}

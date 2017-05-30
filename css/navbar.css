@@ -1,0 +1,167 @@
+
+.navbar-nav {
+    float: right;
+    font-size: 17px;
+}
+
+.navbar-default .navbar-brand {
+   color: #BE0A26;
+}
+
+.navbar-default {
+    background-color: #A093B1;
+    border:none;
+		padding-left: 0px;
+		padding-right: 0px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #A093B1;
+}
+
+.hamburger {
+    border-color: #BE0A26;
+}
+.navbar-toggle {
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    border-radius: 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #BE0A26;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-width: 0;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: #A093B1;
+}
+.navbar-nav>li>a {
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+  border-radius: 0px;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+
+.navbar-brand {
+	float: left;
+	height: 50px;
+	font-size: 20px;
+	line-height: 20px;
+  font-weight: 500;
+}
+#headerBackground {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+		max-height: 200px;
+		background-color: #A093B1;
+}
+
+.breadcrumb {
+    float: left;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    list-style: none;
+    background-color: #A093B1;
+    border-radius: 0px;
+    font-size: 14px;
+    padding-left: 5px;
+    font-weight: 300;
+}
+
+/* Kleine Geräte (Tablets, 768px und breiter) */
+@media (min-width: 768px) {
+  #headerBackground {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+  .breadcrumb{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+  }
+}
+
+/* Mittlere Geräte (Desktop-PCs, 992px und breiter) */
+@media (min-width: 992px) {
+  #headerBackground {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+/*  .breadcrumb{
+    padding-left: 80px;
+  }
+  .navbar-nav{
+    padding-right: 80px;
+  }
+  */
+}
+
+/* Große Geräte (Desktop-PCs, 1200px und breiter) */
+@media (min-width: 1080px) {
+  #headerBackground {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+/*  .breadcrumb{
+    padding-left: 97px;
+  }
+  .navbar-nav{
+    padding-right: 80px;
+  }
+  */
+}
+
+/* @media(min-width:1200px) {
+
+    .breadcrumb{
+      padding-left: 97px;
+    }
+    .navbar-nav{
+      padding-right: 80px;
+    }
+}*/
+
+.breadcrumb>.active {
+    color: white;
+}
+.breadcrumb>li>a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dotted white;
+}
+.breadcrumb>li>a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: "|";
+    padding: 0 3px;
+}

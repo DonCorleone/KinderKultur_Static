@@ -1,0 +1,111 @@
+sbody {
+		background: #66CCCC !important;
+		font-family: 'Roboto', sans-serif;font-weight: 300;
+}
+#headerImage {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.mainPanel{
+	background-color: black;
+}
+
+.mainImage {
+		max-height:100%;
+		border-bottom: 0px dotted #A093B1;
+}
+
+/* Mobiles 2016 */
+@media (min-width: 544px) {
+	.mainImage {
+			max-height:252px;
+	}
+}
+
+/* Kleine Geräte (Tablets, 768px und breiter) */
+@media (min-width: 767px) {
+	.mainImage {
+			max-height:377px;
+	}
+}
+
+/* Mittlere Geräte (Desktop-PCs, 992px und breiter) */
+@media (min-width: 992px) {
+	.mainImage {
+			max-height:501px;
+	}
+}
+
+/* Große Geräte (Desktop-PCs, 1200px und breiter) */
+@media (min-width: 1080px) {
+	.mainImage {
+			max-height:619px;
+	}
+}
+
+.nonBoarder{
+	border-bottom: none;
+}
+
+a:visited {
+    color: #A093B1;
+		border-bottom: 1px dotted #A093B1;
+}
+a:link {
+    color: #A093B1;
+    text-decoration: none;
+		border-bottom: 1px dotted #A093B1;
+}
+
+a:hover {
+    color: #5E1343;
+    text-decoration: none;
+		border-bottom: 1px solid #5E1343;
+}
+
+.container-fluid {
+  /*  background-color: #A093B1; */
+}
+.carousel-control {
+    color: #5E1343!important;
+    /*text-align: center;*/
+		text-shadow: 1px 1px 2px black, 0 0 15px white, 0 0 5px black;
+    opacity: 1;
+}
+.carousel-inner {
+    opacity: .8;
+}
+.carousel-caption {
+    color: #5E1343;
+    text-shadow: 0 1px 0px white;
+}
+
+.imageCd{
+	opacity: 1.0;
+	display: block;
+	height: auto;
+}
+.thumbnail{
+  background-color: #66CCCC;
+  border-width: 0px;
+}
+.thumbnail a>img, .thumbnail>img {
+  max-width: 200px;
+  min-width: 200px;
+}
+.thumbnail .caption {
+    padding: 0px;
+    color: #333;
+    text-align: center;
+}
+.bio{
+	text-align: left;
+}
+
+.carousel-indicators li {
+    border: 1px solid #5E1343;
+}
+.carousel-indicators .active {
+    background-color: #5E1343;
+}

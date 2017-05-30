@@ -1,0 +1,29 @@
+.modalMenuDialog {
+    position: relative;
+    float: right;
+    text-align: center;;
+    width: 200px;
+    margin: 0px;
+		border-radius: 0;
+}
+
+.modalMenuBody{
+    padding-right: 27px;
+    padding-top: 0px;
+}
+.modalMenuContent {
+    border-radius: 0px;
+}
+
+.menuTitle{
+  text-align: center;
+}
+button.close{
+  padding-top:40px;
+}
+
+.menuIcon{
+  /*background-color: #66CCCC;*/
+  padding: 10px;
+  max-width: 142px;
+}
