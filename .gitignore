@@ -1,16 +1,16 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # media files
-*.jpg
-*.jpeg
+# *.jpg
+# *.jpeg
 *.mp4
 *.mp3
 *.mpeg
 # *.png
 *.avi
 *.mov
-*.svg
-*.gif
+# *.svg
+# *.gif
 *.m4v
 
 # compiled output
