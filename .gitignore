@@ -14,11 +14,11 @@
 *.m4v
 
 # compiled output
-/dist
-/tmp
+# /dist
+# /tmp
 
 # dependencies
-/node_modules
+# /node_modules
 
 # IDEs and editors
 /.idea
