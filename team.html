@@ -210,7 +210,7 @@
       <div class="container">
         <div class="row">
           <!-- Schlosswochen -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="col-lg-6 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Team Schlosswochen</h3>
@@ -226,7 +226,7 @@
             </div>
           </div>
           <!-- Petruschka -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
+          <div class="col-lg-6 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Team Petruschka</h3>
@@ -250,7 +250,7 @@
         </div>
         <div class="row">
           <!-- Natalie -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Natalie Wieland-Hofer</h3>
@@ -269,7 +269,7 @@
             </div>
           </div>
           <!-- Marianne -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Marianne Hofer</h3>
@@ -289,7 +289,7 @@
             </div>
           </div>
           <!-- Robert -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Robert Hofer</h3>
@@ -308,7 +308,7 @@
             </div>
           </div>
           <!-- Regula -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Regula auf der Maur</h3>
@@ -326,7 +326,7 @@
             </div>
           </div>
           <!-- Nathalie -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Nathalie Hildenbrand Isler</h3>
@@ -344,7 +344,7 @@
             </div>
           </div>
           <!-- Burgeners -->
-          <div class="col-lg-4 col-sm-6 col-xs-12">
+          <div class="col-lg-4 col-sm-6 col-xs-12 portrait">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">Weitere</h3>
@@ -387,15 +387,15 @@
     <!-- Page Load -->
     <script type="text/javascript">
     $( document ).ready(function() {
-        var heights = $(".col-lg-4").map(function() {
+        var heights = $(".portrait").map(function() {
             return $(this).height();
         }).get(),
 
         maxHeight = Math.max.apply(null, heights);
 
-        $(".col-lg-4").height(maxHeight);
+        $(".portrait").height(maxHeight);
 
-        heights = $(".col-sm-6").map(function() {
+        /* heights = $(".col-sm-6").map(function() {
             return $(this).height();
         }).get(),
 
@@ -410,7 +410,7 @@
         maxHeight = Math.max.apply(null, heights);
 
         $(".col-xs-12").height(maxHeight);
-
+ */
     });
     </script>
 
