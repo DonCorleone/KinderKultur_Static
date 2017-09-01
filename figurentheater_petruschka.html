@@ -2549,8 +2549,12 @@
     <script type="text/javascript">
 
       $(document).ready(function () {
+        var dateObj = new Date();
+        var month = dateObj.getUTCMonth() + 1; //months from 1-12
+        var year = dateObj.getUTCFullYear();
+         
         $(".responsive-calendar").responsiveCalendar({
-          time: '2017-08',
+          time: year + "-" + month,
           events: {
             "-08-19": {},
             "2017-08-20": {},
