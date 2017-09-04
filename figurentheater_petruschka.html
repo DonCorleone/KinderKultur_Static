@@ -545,7 +545,7 @@
                 <h4 class="panel-title">Daten aktuelles Stück</h4>
               </div>
               <div class="panel-body">
-                <div class="responsive-calendar">
+                <div class="responsive-calendar" data-translate-months="Styczeń,Luty,Marzec,Kwiecień,Maj,Czerwiec,Lipiec,Sierpień,Wrzesień,Październik,Listopad,Grudzień">
                   <div class="controls">
                       <a class="pull-left" data-go="prev"><div class="btn btn-primary"><<</div></a>
                       <h4><span data-head-year></span> <span data-head-month></span></h4>
@@ -2545,14 +2545,15 @@
 
     <!-- Calendar -->
     <script src="js/responsive-calendar.js"></script>
-    <script src="js/icsFormatter.js"></script>
+    <!--script src="js/icsFormatter.js"></script-->
     <script type="text/javascript">
 
       $(document).ready(function () {
         var dateObj = new Date();
         var month = dateObj.getUTCMonth() + 1; //months from 1-12
         var year = dateObj.getUTCFullYear();
-         
+        var day = dateObj.getDate();
+        var today = year + "-" + month + "-" + day;
         $(".responsive-calendar").responsiveCalendar({
           time: year + "-" + month,
           events: {
@@ -2579,7 +2580,8 @@
             "2017-10-01": {}
           }, //"class": "active-special"
           activateNonCurrentMonths:true,
-          allRows:false //,
+          allRows:false
+          //,
           // onDayClick: function(events) {
           //   var thisDayEvent, key;
           //
