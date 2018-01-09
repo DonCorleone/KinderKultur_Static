@@ -29,7 +29,7 @@
     var item = val;
     var t = getTemplate();
 
-    t.find('.week').html(item.ItemText3);
+    t.find('.week').html(item.ItemText1);
     t.find('.date').html(item.From.Date + ' - ' + item.To.Date);
 
     var freePlaces = 0;
