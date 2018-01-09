@@ -71,7 +71,7 @@
   }
 
   var siteUrl = 'http://kinderkultur.crmforyou.ch/';
-  var actionUrl = siteUrl + 'Portal/Veranstaltung/Details'
-  var fetchUrl = siteUrl + 'BomApi/GetItems'
+  var actionUrl = siteUrl + 'Portal/Veranstaltung/Details';
+  var fetchUrl = siteUrl + 'BomApi/GetItems';
   fetch();
 })();
