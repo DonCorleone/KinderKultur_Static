@@ -603,7 +603,7 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td></td><td colspan="4">Das Anmeldefenster wird demnächst geöffnet. <a href="http://eepurl.com/cTTPNf" target ="_blank">Für eine Benachrichtigung via Newsletter registrieren Sie sich bitte hier.</a></td>
+                        <td></td><td colspan="4">Daten werden geladen ...</td>
                       </tr>
                     </tbody>
                   </table>
@@ -949,8 +949,8 @@ document.getElementById('open-popup').onclick = function() {showMailingPopUp()};
           console.error('An error ocurred');
         }
         function prepare(items){
-        //  $('#tblBOMData tbody').empty();
-        //  return $.each(items, render);
+          $('#tblBOMData tbody').empty();
+          return $.each(items, render);
         }
         function render(key, val) {
           var item = val;
