@@ -16,6 +16,10 @@ sbody {
 		border-bottom: 0px dotted #A093B1;
 }
 
+.sponsor {
+	background: #f5f5f5;
+}
+
 /* Mobiles 2016 */
 @media (min-width: 544px) {
 	.mainImage {
