@@ -6,10 +6,9 @@
     "configurations": [
         {
             "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "file:///Users/dev/Documents/_Projektli/KinderKultur_Static/index.html",
-            "webRoot": "${workspaceFolder}"
+			"request": "launch",
+			"name": "Launch Chrome against localhost",
+			"file": "${workspaceFolder}/index.html"
         }
     ]
 }
