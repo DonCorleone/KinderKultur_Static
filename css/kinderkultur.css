@@ -72,6 +72,22 @@ a:hover {
 		border-bottom: 1px solid #5E1343;
 }
 
+.panel-body a:link {
+    color: #5E1343;
+    text-decoration: none;
+    border-bottom: 1px dotted #5E1343;
+}
+
+.panel-body a:visited {
+    color: #5E1343;
+		border-bottom: 1px dotted #5E1343;
+}
+.panel-body a:hover {
+    color: #A093B1;
+    text-decoration: none;
+		border-bottom: 1px solid #A093B1;
+}
+
 .container-fluid {
   /*  background-color: #A093B1; */
 }
