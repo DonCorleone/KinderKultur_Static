@@ -665,7 +665,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td></td><td colspan="4">Daten werden geladen...</td>
+                        <!-- todo : raus bei aufschaltung -->
+                        <td></td><td colspan="4">Das Portal wird am Freitag, 22.02.2019 um 12:00 Uhr aufgeschaltet</td>
+                        <!--td></td><td colspan="4">Daten werden geladen...</td-->
                       </tr>
                     </tbody>
                   </table>
@@ -690,7 +692,7 @@
                 <h3 class="panel-title">Alter</h3>
               </div>
               <div class="panel-body">
-                Für Kinder von 4.5 - 9 Jahren
+                Für Kinder ab 4.5 - 9 Jahren
               </div>
             </div>
             <!-- Ort -->
@@ -708,7 +710,7 @@
                 <h3 class="panel-title">Kosten</h3>
               </div>
               <div class="panel-body">
-                <p>Fr. 250.- für eine Schlosswoche inkl. Werkmaterial &amp; Mittagessen pro Kind</p>
+                <p>Fr. 260.- für eine Schlosswoche inkl. Werkmaterial &amp; Mittagessen pro Kind</p>
                 <p>Geschwisterrabatt Fr. 20.-</p>
               </div>
             </div>
@@ -722,7 +724,7 @@
               </div>
               <div class="panel-body">
                   In wundervoller, geschützter Umgebung tauchen die Kinder in eine magische Welt ein und werden zu Prinzessinnen, Rittern, Königinnen, Königen, Märchentieren und weiteren Gestalten.
-                  <br><br>Jedes Jahr gibt es eine neue spannende Phantasy-Geschichte, ein neues Schlosswochenlied, neue Abenteuer, Schlosstänze, ein Ritterturnier, Zeit um Rüstungen zu werken, Prinzessinnenkleider zu gestalten, spielen, tanzen und vieles mehr.
+                  <br><br>Jedes Jahr gibt es eine neue spannende Fantasy-Geschichte, ein neues Schlosswochenlied, neue Abenteuer, Schlosstänze, ein Ritterturnier, Zeit um Rüstungen zu werken, Prinzessinnenkleider zu gestalten, spielen, tanzen und vieles mehr.
                   <br><br>Die Kinder werden am ersten Schlosstag in zwei Gruppen eingeteilt, dabei achten wir darauf, dass sie immer mit ihren Geschwistern und Freunden in der gleichen Gruppe sein können.
                   <br><br>Die Kinder werden von uns in ihrer Kreativität liebevoll unterstützt. Die Schlosswochen finden wie immer unter der Leitung von diplomierten Kindergarten-Pädagoginnen statt.
                   <br><br>Um mehr über die Schlosswochen zu erfahren, bitte einfach auf die roten Balken klicken.
@@ -754,7 +756,7 @@
                         <p>Bei schönem Wetter: Sonnenhut, (Bitte reiben Sie Ihre Kinder zu Hause mit Sonnencreme ein)</p>
                         <p>Bei schlechtem Wetter: Gummistiefel, Regenschutz</p>
 
-                        - Der Betrag von Fr. 250.- wird am ersten Tag bar bezahlt<br>
+                        - Der Betrag von Fr. 260.- wird am ersten Tag bar bezahlt<br>
               					- Die Versicherung ist Sache der Erziehungsberechtigten<br>
               					- Die Erziehungsberechtigten müssen telefonisch erreichbar sein. (z.B. Handy Nr.)<br>
               					- Wenn Ihr Kind aus einem Grund nicht die ganze Woche anwesend sein kann, wird das Geld nicht zurückerstattet. <br>
@@ -1001,8 +1003,9 @@
           console.error('An error ocurred');
         }
         function prepare(items){
-          $('#tblBOMData tbody').empty();
-          return $.each(items, render);
+          // todo : raus bei aufschaltung
+          // $('#tblBOMData tbody').empty();
+          // return $.each(items, render);
         }
         function render(key, val) {
           var item = val;
