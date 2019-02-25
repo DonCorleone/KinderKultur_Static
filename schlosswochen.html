@@ -666,8 +666,8 @@
                     <tbody>
                       <tr>
                         <!-- todo : raus bei aufschaltung -->
-                        <td></td><td colspan="4">Das Portal wird am Freitag, 22.02.2019 um 12:00 Uhr aufgeschaltet</td>
-                        <!--td></td><td colspan="4">Daten werden geladen...</td-->
+                        <!--td></td><td colspan="4">Das Portal wird am Freitag, 22.02.2019 um 12:00 Uhr aufgeschaltet</td -->
+                        <td></td><td colspan="4">Daten werden geladen...</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1004,8 +1004,8 @@
         }
         function prepare(items){
           // todo : raus bei aufschaltung
-          // $('#tblBOMData tbody').empty();
-          // return $.each(items, render);
+           $('#tblBOMData tbody').empty();
+           return $.each(items, render);
         }
         function render(key, val) {
           var item = val;
