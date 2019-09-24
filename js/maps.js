@@ -51,6 +51,33 @@ function initialize() {
       infowindow2.open(map2, marker2);
     });
   }
+
+  if(document.getElementById('map-canvas-wartegg') !== null){
+    var map3 = new google.maps.Map(document.getElementById("map-canvas-wartegg"), getMapOptionsWartegg());
+
+    var contentString3 = '<div id="content">'+
+        '<div id="siteNotice">'+
+        '</div>'+
+        '<h4 id="firstHeading" class="firstHeading">Wartegg Luzern</h4>'+
+        '<div id="bodyContent">'+
+        '<p>Kasernenplatz 6<br>6003 Luzern<br>Bus Nr. 2/9/12/18 Haltestelle Kasernenplatz</p>'+
+        '</div>'+
+        '</div>';
+
+    var infowindow3 = new google.maps.InfoWindow({
+      content: contentString3 /*,
+      maxWidth: 300*/
+    });
+
+    var marker3 = new google.maps.Marker({
+      position: getStandortWartegg(),
+      map: map3,
+      title: 'Wartegg Luzern'
+    });
+    marker3.addListener('click', function() {
+      infowindow3.open(map3, marker3);
+    });
+  }
 }
 
 function initialiseModal(){
@@ -97,6 +124,28 @@ function getMapOptionsTribschenhorn(){
     rotateControl: false,
   };
 }
+
+function getStandortWartegg(){
+  return  {lat: 47.0402822, lng: 8.3227403};
+}
+
+function getMapOptionsWartegg(){
+  return {
+    center: new google.maps.LatLng(47.0402822,8.3227403),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.HYBRID,
+    scrollwheel: false,
+    draggable: true,
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: false,
+    scaleControl: true,
+    streetViewControl: false,
+    overviewMapControl: false,
+    rotateControl: false,
+  };
+}
+
 function resizeMap() {
    if(typeof map =="undefined") return;
    setTimeout( function(){resizingMap();} , 400);
