@@ -1,6 +1,7 @@
-sbody {
+body {
 		background: #66CCCC !important;
-		font-family: 'Roboto', sans-serif;font-weight: 300;
+		/*font-family: 'Roboto', sans-serif;font-weight: 300;*/
+		font-size: 16px;
 }
 #headerImage {
 	padding-top: 15px;
