@@ -39,6 +39,11 @@
     color: white;
     background-color: #A093B1;
 }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: #A093B1;
+}
+
 .navbar-nav>li>a {
   text-decoration: none;
   border-bottom: 1px dotted white;

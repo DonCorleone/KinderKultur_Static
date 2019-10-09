@@ -40,14 +40,14 @@ html {
 
 .scrollSection {
   min-height: 100%;
-  padding-top: 64px;
+  padding-top: 24px;
 }
 
 /* Mobiles 2016 */
 @media (min-width: 544px) {
   .scrollSection {
     min-height: 100%;
-    padding-top: 67px;
+    padding-top: 27px;
   }
 }
 
@@ -55,7 +55,7 @@ html {
 @media (min-width: 768px) {
   .scrollSection {
     min-height: 100%;
-    padding-top: 65px;
+    padding-top: 25px;
   }
 }
 
@@ -63,7 +63,7 @@ html {
 @media (min-width: 992px) {
   .scrollSection {
     min-height: 100%;
-    padding-top: 66px;
+    padding-top: 26px;
   }
 }
 
@@ -71,6 +71,6 @@ html {
 @media (min-width: 1200px) {
   .scrollSection {
     min-height: 100%;
-    padding-top: 66px;
+    padding-top: 26px;
   }
 }

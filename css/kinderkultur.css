@@ -58,21 +58,7 @@ body {
 	border-bottom: none;
 }
 
-a:visited {
-    color: #A093B1;
-		border-bottom: 1px dotted #A093B1;
-}
-a:link {
-    color: #A093B1;
-    text-decoration: none;
-		border-bottom: 1px dotted #A093B1;
-}
 
-a:hover {
-    color: #5E1343;
-    text-decoration: none;
-		border-bottom: 1px solid #5E1343;
-}
 
 .panel-body a:link {
     color: #5E1343;
