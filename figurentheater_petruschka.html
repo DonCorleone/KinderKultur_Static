@@ -3253,11 +3253,10 @@
 	<!--script src="js/icsFormatter.js"></script-->
 	<script type="text/javascript">
 		$(document).ready(function () {
-			var dateObj = new Date();
-			var month = dateObj.getUTCMonth(); //months from 1-12
-			var year = dateObj.getUTCFullYear();
-			var day = dateObj.getDate();
-			var today = year + "-" + month + "-" + day;
+
+			var currentDate = new Date();
+			const premiere2019s = new Date('2019-08-17');
+			currentDate = premiere2019s > new Date() ? premiere2019s : new Date();
 			$("#cal2019s").responsiveCalendar({
 				time: 2019 + "-" + 8,
 				events: {
@@ -3284,8 +3283,10 @@
 				activateNonCurrentMonths: true,
 				allRows: false
 			});
+			const premiere2019h = new Date('2019-10-25');
+			currentDate = premiere2019h > new Date() ? premiere2019h : new Date();
 			$("#cal2019h").responsiveCalendar({
-				time: 2019 + "-" + 10,
+				time:  currentDate.getUTCFullYear() + "-" + currentDate.getUTCMonth() + 1,
 				events: {
 					'2019-10-25': {},
 					'2019-10-27': {},
@@ -3295,8 +3296,10 @@
 				activateNonCurrentMonths: true,
 				allRows: false
 			});
+			const premiere2019w = new Date('2019-12-07');
+			currentDate = premiere2019w > new Date() ? premiere2019w : new Date();
 			$("#cal2019w").responsiveCalendar({
-				time: 2020 + "-" + 1,
+				time:  currentDate.getUTCFullYear() + "-" + currentDate.getUTCMonth() + 1,
 				events: {
 					'2019-12-07': {},
 					'2019-12-08': {},
