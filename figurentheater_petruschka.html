@@ -3254,12 +3254,12 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			var dateObj = new Date();
-			var month = dateObj.getUTCMonth() + 1; //months from 1-12
+			var month = dateObj.getUTCMonth(); //months from 1-12
 			var year = dateObj.getUTCFullYear();
 			var day = dateObj.getDate();
 			var today = year + "-" + month + "-" + day;
 			$("#cal2019s").responsiveCalendar({
-				time: year + "-" + month,
+				time: 2019 + "-" + 8,
 				events: {
 					'2019-08-17': {},
 					'2019-08-18': {},
@@ -3285,7 +3285,7 @@
 				allRows: false
 			});
 			$("#cal2019h").responsiveCalendar({
-				time: year + "-" + 10,
+				time: 2019 + "-" + 10,
 				events: {
 					'2019-10-25': {},
 					'2019-10-27': {},
@@ -3296,7 +3296,7 @@
 				allRows: false
 			});
 			$("#cal2019w").responsiveCalendar({
-				time: year + "-" + 12,
+				time: 2020 + "-" + 1,
 				events: {
 					'2019-12-07': {},
 					'2019-12-08': {},
