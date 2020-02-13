@@ -764,15 +764,16 @@
                     <tr>
                       <!-- todo : raus bei aufschaltung -->
                       <!--td></td><td colspan="4">Das Portal wird am Freitag, 22.02.2019 um 12:00 Uhr aufgeschaltet</td -->
-                      <td></td>
-                      <td colspan="4">Daten werden geladen...</td>
+                      <!--td></td-->
+                      <!--td colspan="4"></td-->
                     </tr>
                   </tbody>
                 </table>
+                <p>Die Daten werden hier in Kürze aufgeschaltet. Wenn Sie vorgängig informiert werden möchten, tragen Sie sich unten für den Newsletter ein.</p>
               </div>
             </div>
             <div class="panel-footer">
-              Die Schlosswoche findet auch am 1. August statt.
+              <p><a href="http://eepurl.com/cTTPNf" target="_blank">Registrieren Sie sich bitte hier.</a></p>
             </div>
           </div>
           <!-- AGB -->
@@ -1141,8 +1142,8 @@
       }
       function prepare(items) {
         // todo : raus bei aufschaltung
-        $('#tblBOMData tbody').empty();
-        return $.each(items, render);
+        // $('#tblBOMData tbody').empty();
+        // return $.each(items, render);
       }
       function render(key, val) {
         var item = val;
