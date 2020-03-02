@@ -1,0 +1,2 @@
+SPF: Create a TXT record for kinderkultur.ch with:
+v=spf1 include:servers.mcsv.net ?all

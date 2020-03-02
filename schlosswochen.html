@@ -769,7 +769,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <p>Die Daten werden hier in Kürze aufgeschaltet. Wenn Sie vorgängig informiert werden möchten, tragen Sie sich unten für den Newsletter ein.</p>
+                <p>Die Daten und der Anmelde-Link werden am Freitag, 06. März 2020 um 12:00 Uhr HIER aufgeschaltet.</p>
               </div>
             </div>
             <div class="panel-footer">
@@ -1142,8 +1142,8 @@
       }
       function prepare(items) {
         // todo : raus bei aufschaltung
-        // $('#tblBOMData tbody').empty();
-        // return $.each(items, render);
+        $('#tblBOMData tbody').empty();
+        return $.each(items, render);
       }
       function render(key, val) {
         var item = val;
