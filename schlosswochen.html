@@ -1179,7 +1179,7 @@
         }
         t.find('.state').append('<span class="badge">' + freePlaces + '</span>').append(' Freie Plätze');
         t.find('.action').append($('<a>').attr("target", "_blank").attr('href', item.subscribeUrl).html(linkText));
-        return $('#tblBOMData tbody'); //.append(t);
+        return $('#tblBOMData tbody').append(t);
       }
 
       function getTemplate() {
