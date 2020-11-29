@@ -121,3 +121,7 @@ body {
 .carousel-indicators .active {
     background-color: #5E1343;
 }
+
+.h2Title {
+	margin-left: 15px;
+}
