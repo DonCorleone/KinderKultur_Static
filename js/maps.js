@@ -5,7 +5,7 @@ function initialize() {
   var contentString1 = '<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
-      '<h4 id="firstHeading" class="firstHeading">Pavillion Tribschenhorn</h4>'+
+      '<h4 id="firstHeading" class="firstHeading">Pavillon Tribschenhorn</h4>'+
       '<div id="bodyContent">'+
       '<p>Richard - Wagner - Weg 17<br>6005 Luzern<br>Bus Nr. 6/7/8 Haltestelle Wartegg, dann ca. 5 Min. Fussweg Richtung See</p>'+
       '</div>'+
@@ -19,7 +19,7 @@ function initialize() {
   var marker1 = new google.maps.Marker({
     position: getStandortTribschenhorn(),
     map: map1,
-    title: 'Pavillion Tribschenhorn'
+    title: 'Pavillon Tribschenhorn'
   });
   marker1.addListener('click', function() {
     infowindow1.open(map1, marker1);
