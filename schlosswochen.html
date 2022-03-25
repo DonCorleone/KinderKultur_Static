@@ -1345,67 +1345,6 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     <script src="js/moment.js"></script>
-    <script src="js/bom-framework.min.js"></script>
-    <script>
-        (function () {
-            function requestSuccess(data) {
-                prepare(data);
-            }
-
-            function requestFail() {
-                console.error('An error ocurred');
-            }
-
-            function prepare(items) {
-                // todo : raus bei aufschaltung
-                $('#tblBOMData tbody').empty();
-                return $.each(items, render);
-            }
-
-            function render(key, val) {
-                var item = val;
-                var t = getTemplate();
-
-                t.find('.week').html(item.text3);
-                t.find('.date').html(moment(item.from * 1000).format('DD.MM.YYYY') + ' - ' + moment(item.to * 1000).format(
-                    'DD.MM.YYYY'));
-                //moment(item.from * 1000).format('DD.MM.YYYY');
-                //new Date(item.from * 1000).toUTCString();
-                var freePlaces = 0;
-                var linkText = '';
-
-                if (item.maxParticipants == 0) {
-                    // Keine Plätze, keine Möglichkeit
-                    freePlaces = 0
-                    linkText = ''
-                } else {
-
-                    // Warteliste voll
-                    if (item.countOfWaitingParticipants > item.maxWaitings) {
-                        freePlaces = 0
-                        linkText = ''
-
-                        // Freie Plätze
-                    } else if (item.countOfParticipants < item.maxParticipants) {
-                        freePlaces = item.maxParticipants - item.countOfParticipants;
-                        linkText = 'Anmelden'
-                    } else if (item.countOfWaitingParticipants < item.maxWaitings) {
-                        freePlaces = 0;
-                        linkText = 'Warteliste';
-                    }
-                }
-                t.find('.state').append('<span class="badge">' + freePlaces + '</span>').append(' Freie Plätze');
-                t.find('.action').append($('<a>').attr("target", "_blank").attr('href', item.subscribeUrl).html(linkText));
-                return $('#tblBOMData tbody').append(t);
-            }
-
-            function getTemplate() {
-                return $($('#tblBOMData_Entry').clone().html());
-            }
-
-            return bom.get.module('events', null, requestSuccess, requestFail);
-        })();
-    </script>
     <script type="text/template" id="tblBOMData_Entry">
         <tr>
             <th scope="row"></th>
