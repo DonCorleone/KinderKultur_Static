@@ -59,11 +59,13 @@ body {
 
 .panel-body {
   padding: 15px;
+  color: var(--panel-color);
   /*background-color: var(--main-bg-color);*/
 }
 
 .panel-footer {
-  background-color: var(--panel-bg);
+  background-color: var(--panel-bg-color);
+  color: var(--panel-footer-color);
 }
 
 .inner {
@@ -87,8 +89,8 @@ body {
   -o-filter: grayscale(100%);
 }
 .panel-default > .panel-heading {
-  background-color: var(--panel-color);
-  border-color: var(--panel-color);
+  background-color: var(--panel-header-bg-color);
+  border-color: var(--panel-header-bg-color);
   color: var(--panel-color);
 }
 
@@ -96,7 +98,7 @@ body {
   border-bottom: 0px solid transparent;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  background-color: var(--panel-color);
+  background-color: var(--panel-header-bg-color);
   color: var(--panel-color);
   font-weight: 300;
   cursor: pointer;

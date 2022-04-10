@@ -1,6 +1,5 @@
 :root {
   --gris-fonce: rgb(94, 96, 97);
-  --rouge-carmin: rgb(143, 58, 67);
   --rose-clair: rgb(214, 175, 166);
   --bleu-outremer-31: rgb(77, 106, 168);
   --bleu-cerelueen-31: rgb(62, 110, 144);
@@ -10,7 +9,9 @@
   --gris-fonce: rgb(94, 96, 97);
   --rouge-vermillont: rgb(155, 55, 56);
   --rouge-rubia: rgb(148, 58, 77);
+  --rouge-carmin: rgb(143, 58, 67);
   --vert-31: rgb(127, 162, 90);
+  --vert-59: rgb(66, 143, 112);
   --vert-clair: rgb(171, 193, 122);
   --vert-fonce: rgb(62, 111, 66);
   --vert-anglais: rgb(64, 110, 88);
@@ -41,15 +42,18 @@
   --header-bg-color: var(--bleu-ceruleen-pale);
   --main-bg-color: var(--bleu-ceruleen-pale);
 
-  --header-typeface-fill-color: var(--rouge-carmin);
-  --header-typeface-stroke-color: var(--rouge-carmin);
+  --header-typeface-fill-color: var(--rouge-rubia);
+  --header-typeface-stroke-color: var(--rouge-rubia);
 
-  --sw-header-typeface-fill-color: var(--vert-anglais);
-  --sw-header-typeface-stroke-color: var(--vert-anglais);
+  --sw-header-typeface-fill-color: var(--vert-anglais-claire);
+  --sw-header-typeface-stroke-color: var(--vert-anglais-claire);
 
-  --panel-header-color: var(--orange-pale);
-  --panel-color: var(--vert-anglais);
-  --panel-bg: var( --rose-clair);
+  --panel-header-color: var(--blanc);
+  --panel-header-bg-color: var(--vert-59);
+  --panel-color: var(--terre-ombre-brule);
+  --panel-bg-color: var(--vert-clair);
+
+  --panel-footer-color: var(--terre-ombre-brule);
 
   --navbar-bg-color: var(--header-typeface-fill-color);
   --navbar-color: var(--terre-sienne-brule);
@@ -97,7 +101,7 @@ a {
 }
 
 .sponsor {
-  background: var(--panel-bg);
+  background: var( --panel-bg-color);
   display: block;
   margin: 0 auto;
   height: 300px;
