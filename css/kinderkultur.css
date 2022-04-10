@@ -1,140 +1,187 @@
 :root {
-	--header-bg-color: rgb(148, 58, 77);
-	--main-bg-color: rgb(138, 181, 186);
+  --gris-fonce: rgb(94, 96, 97);
+  --rouge-carmin: rgb(143, 58, 67);
+  --rose-clair: rgb(214, 175, 166);
+  --bleu-outremer-31: rgb(77, 106, 168);
+  --bleu-cerelueen-31: rgb(62, 110, 144);
+  --blanc: rgb(234, 219, 192);
+  --gris-31: rgb(146, 148, 148);
+  --gris-clair-31: rgb(188, 187, 182);
+  --gris-fonce: rgb(94, 96, 97);
+  --rouge-vermillont: rgb(155, 55, 56);
+  --rouge-rubia: rgb(148, 58, 77);
+  --vert-31: rgb(127, 162, 90);
+  --vert-clair: rgb(171, 193, 122);
+  --vert-fonce: rgb(62, 111, 66);
+  --vert-anglais: rgb(64, 110, 88);
+  --vert-anglais-claire: rgb(145, 175, 161);
+  --vert-anglais-pale: rgb(190, 203, 183);
+  --vert-jaune-clair: rgb(196, 211, 155);
+  --ocre-rouge-moyen: rgb(205, 152, 134);
+  --ocre-rouge-claire: rgb(219, 190, 170);
+  --ocre-rouge: rgb(139, 77, 62);
+  --terre-ombre-brule: rgb(76, 66, 61);
+  --terre-sienne-claire: rgb(216, 178, 154);
+  --terre-sienne-claire-31: rgb(219, 190, 170);
+  --terre-sienne-brique: rgb(182, 123, 102);
+  --terre-sienne-brule: rgb(104, 68, 60);
+  --ombre-naturelle-clair: rgb(90, 85, 80);
+  --ombre-brule-clair: rgb(183, 163, 146);
+  --orange-clair: rgb(220, 141, 103);
 
-	--header-typeface-fill-color: rgb(234, 219, 192);
-	--header-typeface-stroke-color: rgb(234, 219, 192);
+  --orange-pale: rgb(234, 207, 185);
+  --ceruleen-moyen: rgb(138, 181, 186);
+  --rose-pale: rgb(230, 205, 191);
+  --bleu-ceruleen-pale: rgb(198, 213, 204);
+  --ceruleen-clair: rgb(168, 196, 193);
+  --outremer-pale: rgb(182, 198, 206);
+  --outremer-moyen: rgb(143, 171, 201);
+  --outremer-clair: rgb(171, 189, 200);
 
-	--sw-header-typeface-fill-color: rgb(196, 211, 155);
-	--sw-header-typeface-stroke-color: rgb(196, 211, 155);
-	
-	--panel-color: rgb(104, 68, 60);
-	--panel-bg: rgb(196, 211, 155);
-	
-	--link-color: pink;
+  --header-bg-color: var(--bleu-ceruleen-pale);
+  --main-bg-color: var(--bleu-ceruleen-pale);
+
+  --header-typeface-fill-color: var(--rouge-carmin);
+  --header-typeface-stroke-color: var(--rouge-carmin);
+
+  --sw-header-typeface-fill-color: var(--vert-anglais);
+  --sw-header-typeface-stroke-color: var(--vert-anglais);
+
+  --panel-header-color: var(--orange-pale);
+  --panel-color: var(--vert-anglais);
+  --panel-bg: var( --rose-clair);
+
+  --navbar-bg-color: var(--header-typeface-fill-color);
+  --navbar-color: var(--terre-sienne-brule);
+
+  --modal-bg-color: var(--blanc);
+  --link-color: var(--rouge-carmin);
+
+  --btn-color: var(--blanc);
+  --btn-bg-color: var(--rouge-rubia);
 }
 
-
-
 body {
-		background: var(--main-bg-color) !important;
-		/*font-family: 'Roboto', sans-serif;font-weight: 300;*/
-		font-size: 16px;
+  background: var(--main-bg-color) !important;
+  /*font-family: 'Roboto', sans-serif;font-weight: 300;*/
+  font-size: 16px;
+  color: var(--sw-header-typeface-stroke-color);
 }
 
 a {
-	color: var(--link-color)
+  color: var(--link-color);
 }
 .svg-header-bg {
-	fill:none;
+  fill: none;
 }
 
 .header-typeface {
-	fill: var(--header-typeface-fill-color);
-	stroke: var(--header-typeface-stroke-color);
+  fill: var(--header-typeface-fill-color);
+  stroke: var(--header-typeface-stroke-color);
 }
 
 .schlosswochen-header-typeface {
-	fill: var(--sw-header-typeface-fill-color);
-	stroke: var(--sw-header-typeface-stroke-color);
+  fill: var(--sw-header-typeface-fill-color);
+  stroke: var(--sw-header-typeface-stroke-color);
 }
 #headerImage {
-	padding-top: 15px;
-	padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .mainImage {
-		max-height:100%;
-		border-bottom: 0px dotted var(--header-bg-color);
-		display: block;
-		margin: 0 auto;
+  max-height: 100%;
+  border-bottom: 0px dotted var(--header-bg-color);
+  display: block;
+  margin: 0 auto;
 }
 
 .sponsor {
-	background: var(--panel-bg);
-	display: block;
-	margin: 0 auto;
-	height: 300px;
+  background: var(--panel-bg);
+  display: block;
+  margin: 0 auto;
+  height: 300px;
 }
 
 /* Mobiles 2016 */
 @media (min-width: 544px) {
-	.mainImage {
-			max-height:252px;
-	}
+  .mainImage {
+    max-height: 252px;
+  }
 }
 
 /* Kleine Geräte (Tablets, 768px und breiter) */
 @media (min-width: 767px) {
-	.mainImage {
-			max-height:377px;
-	}
+  .mainImage {
+    max-height: 377px;
+  }
 }
 
 /* Mittlere Geräte (Desktop-PCs, 992px und breiter) */
 @media (min-width: 992px) {
-	.mainImage {
-			max-height:501px;
-	}
+  .mainImage {
+    max-height: 501px;
+  }
 }
 
 /* Große Geräte (Desktop-PCs, 1200px und breiter) */
 @media (min-width: 1080px) {
-	.mainImage {
-			max-height:619px;
-	}
+  .mainImage {
+    max-height: 619px;
+  }
 }
 
-.nonBoarder{
-	border-bottom: none;
+.nonBoarder {
+  border-bottom: none;
 }
 
 .container-fluid {
   /*  background-color: var(--header-bg-color); */
 }
 .carousel-control {
-    color: var(--panel-color)!important;
-    /*text-align: center;*/
-		text-shadow: 1px 1px 2px black, 0 0 15px white, 0 0 5px black;
-    opacity: 1;
+  color: var(--panel-color) !important;
+  /*text-align: center;*/
+  text-shadow: 1px 1px 2px black, 0 0 15px var(--navbar-color), 0 0 5px black;
+  opacity: 1;
 }
 .carousel-inner {
-    opacity: .8;
+  opacity: 0.8;
 }
 .carousel-caption {
-    color: var(--panel-color);
-    text-shadow: 0 1px 0px white;
+  color: var(--panel-color);
+  text-shadow: 0 1px 0px var(--navbar-color);
 }
 
-.imageCd{
-	opacity: 1.0;
-	display: block;
-	height: auto;
+.imageCd {
+  opacity: 1;
+  display: block;
+  height: auto;
 }
-.thumbnail{
+.thumbnail {
   background-color: var(--main-bg-color);
   border-width: 0px;
 }
-.thumbnail a>img, .thumbnail>img {
+.thumbnail a > img,
+.thumbnail > img {
   max-width: 200px;
   min-width: 200px;
 }
 .thumbnail .caption {
-    padding: 0px;
-    color: #333;
-    text-align: center;
+  padding: 0px;
+  color: #333;
+  text-align: center;
 }
-.bio{
-	text-align: left;
+.bio {
+  text-align: left;
 }
 
 .carousel-indicators li {
-    border: 1px solid var(--panel-color);
+  border: 1px solid var(--panel-color);
 }
 .carousel-indicators .active {
-    background-color: var(--panel-color);
+  background-color: var(--panel-color);
 }
 
 .h2Title {
-	margin-left: 15px;
+  margin-left: 15px;
 }

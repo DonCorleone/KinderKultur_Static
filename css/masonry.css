@@ -1,15 +1,19 @@
-.grid-item { width: 200px; }
-.grid-item--width2 { width: 400px; }
+.grid-item {
+  width: 200px;
+}
+.grid-item--width2 {
+  width: 400px;
+}
 .image-wrapper {
-    /*// Adding a loader and background color. The user will see it
+  /*// Adding a loader and background color. The user will see it
 // if the image is loading slow.
     background: #1E1E1E url('loader.gif') center center no-repeat;
     width: 100%;*/
-    background-color: black;
-    text-align: -webkit-center;
+  background-color: black;
+  text-align: -webkit-center;
 }
 .ratio_4-3 {
-    /*// The image has a 16/9 ratio. Until the image has loaded
+  /*// The image has a 16/9 ratio. Until the image has loaded
     // we need to reserve some space so the page won't reflow.
     // How to calculate the space (padding-bottom): 9/16*100 = 56.25
     // Another example: you have an image 400x250.
@@ -18,7 +22,7 @@
     height: 0;*/
 }
 .b-lazy {
-    /*max-width: 100%;*/
+  /*max-width: 100%;*/
 }
 /*.image-wrapper .ratio_4-3{
   background-color: black;

@@ -1,50 +1,51 @@
-.modal-header{
+.modal-header {
   background-color: var(--header-bg-color);
   border-bottom: none;
 }
 
-.modal-body{
+.modal-body {
   /*background-color: var(--main-bg-color); */
 }
 
-.modal-footer{
+.modal-footer {
   background-color: var(--header-bg-color);
   border-top: none;
 }
 
 hr {
-    border-top: 1px solid #333;
+  border-top: 1px solid #333;
 }
-.thumbnail{
+.thumbnail {
   background-color: var(--main-bg-color);
   border-radius: 0px;
   border-width: 2px;
   border-style: dotted;
   border-color: var(--panel-color);
 }
-.thumbnail a>img, .thumbnail>img {
+.thumbnail a > img,
+.thumbnail > img {
   max-width: 200px;
   min-width: 200px;
 }
 .thumbnail .caption {
-    padding: 0px;
-    color: #333;
-    text-align: center;
+  padding: 0px;
+  color: #333;
+  text-align: center;
 }
-.bio{
-	text-align: left;
+.bio {
+  text-align: left;
 }
 
 #btnOK {
-    background-color: #ccc;
-    border-color: var(--panel-color);
-    border: 1px solid var(--panel-color);
-    border-radius: 0px;
+  background-color: #ccc;
+  border-color: var(--panel-color);
+  border: 1px solid var(--panel-color);
+  border-radius: 0px;
 }
 
-.close{
+.close {
   font-size: 26px;
   color: var(--panel-color);
   text-shadow: none;
-  opacity: .8;
+  opacity: 0.8;
 }
