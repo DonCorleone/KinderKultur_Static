@@ -1,14 +1,14 @@
 .modal-header{
-  background-color: #A093B1;
+  background-color: var(--header-bg-color);
   border-bottom: none;
 }
 
 .modal-body{
-  /*background-color: #66CCCC; */
+  /*background-color: var(--main-bg-color); */
 }
 
 .modal-footer{
-  background-color: #A093B1;
+  background-color: var(--header-bg-color);
   border-top: none;
 }
 
@@ -16,11 +16,11 @@ hr {
     border-top: 1px solid #333;
 }
 .thumbnail{
-  background-color: #66CCCC;
+  background-color: var(--main-bg-color);
   border-radius: 0px;
   border-width: 2px;
   border-style: dotted;
-  border-color: #5E1343;
+  border-color: var(--panel-color);
 }
 .thumbnail a>img, .thumbnail>img {
   max-width: 200px;
@@ -37,14 +37,14 @@ hr {
 
 #btnOK {
     background-color: #ccc;
-    border-color: #5E1343;
-    border: 1px solid #5E1343;
+    border-color: var(--panel-color);
+    border: 1px solid var(--panel-color);
     border-radius: 0px;
 }
 
 .close{
   font-size: 26px;
-  color: #5E1343;
+  color: var(--panel-color);
   text-shadow: none;
   opacity: .8;
 }

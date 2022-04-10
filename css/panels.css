@@ -1,7 +1,7 @@
 body {
 		padding-top: 240px;
 		padding-bottom: 40px;
-		background: #66CCCC !important;
+		background: var(--main-bg-color) !important;
 }
 
 html, body {
@@ -40,13 +40,17 @@ html, body {
 		border-radius: 0px;
 		border-width: 2px;
 		border-style: dotted;
-		border-color: #5E1343;
-		background-color: #66CCCC;
+		border-color: var(--panel-color);
+		background-color: var(--main-bg-color);
 }
 
 .panel-body {
 	padding: 15px;
-	/*background-color: #66CCCC;*/
+	/*background-color: var(--main-bg-color);*/
+}
+
+.panel-footer {
+	background-color: var(--panel-bg);
 }
 
 .inner{
@@ -70,8 +74,8 @@ html, body {
 -o-filter: grayscale(100%);
 }
 .panel-default>.panel-heading {
-	background-color: #5E1343;
-	border-color: #5E1343;
+	background-color: var(--panel-color);
+	border-color: var(--panel-color);
 	color:white;
 }
 
@@ -79,7 +83,7 @@ html, body {
 	border-bottom: 0px solid transparent;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
-	background-color: #5E1343;
+	background-color: var(--panel-color);
 	color:white;
   font-weight: 300;
 }
@@ -88,8 +92,8 @@ html, body {
 	  font-weight: 300;
 }
 .panel>.list-group .list-group-item, .panel>.panel-collapse>.list-group .list-group-item {
-	/*background-color: #66CCCC;*/
-	border-color: #5E1343;
+	/*background-color: var(--main-bg-color);*/
+	border-color: var(--panel-color);
 }
 #accordion1 .panel {
     border-width: 0;
@@ -130,8 +134,8 @@ html, body {
 }
 
 .panel-group {
-	/*background-color: #66CCCC;*/
-	border-color: #5E1343;
+	/*background-color: var(--main-bg-color);*/
+	border-color: var(--panel-color);
 }
 
 .panel>.list-group .list-group-item, .panel>.panel-collapse>.list-group .list-group-item {
@@ -143,7 +147,7 @@ html, body {
 }
 .table{
 	background-color: white;
-	border-color: #5E1343;
+	border-color: var(--panel-color);
 }
 
 .table>thead>tr>th {

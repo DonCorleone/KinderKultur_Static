@@ -9,14 +9,14 @@
 }
 
 .navbar-default {
-    background-color: #A093B1;
+    background-color: var(--header-bg-color);
     border:none;
 		padding-left: 0px;
 		padding-right: 0px;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #A093B1;
+    border-color: var(--header-bg-color);
 }
 
 .hamburger {
@@ -37,11 +37,11 @@
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: white;
-    background-color: #A093B1;
+    background-color: var(--header-bg-color);
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-  background-color: #A093B1;
+  background-color: var(--header-bg-color);
 }
 
 .navbar-nav>li>a {
@@ -84,7 +84,7 @@
     padding-left: 10px;
     padding-right: 10px;
 		max-height: 200px;
-		background-color: #A093B1;
+		background-color: var(--header-bg-color);
 }
 
 .breadcrumb {
@@ -92,7 +92,7 @@
     margin-bottom: 0px;
     margin-right: 0px;
     list-style: none;
-    background-color: #A093B1;
+    background-color: var(--header-bg-color);
     border-radius: 0px;
     font-size: 14px;
     padding-left: 5px;
