@@ -72,6 +72,10 @@ body {
   color: var(--sw-header-typeface-stroke-color);
 }
 
+.logo.img-responsive {
+  display: flex;
+}
+
 a {
   color: var(--link-color);
 }
